@@ -19,8 +19,6 @@
            remote="aosp"
            sync-j="4" />
            
-  <project path="candy" name="candy" remote="candy" />
-  
   <project path="build" name="Candy6/android_build" remote="github" revision="c6" >
     <copyfile src="core/root.mk" dest="Makefile" />
   </project>
