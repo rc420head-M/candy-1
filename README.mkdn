@@ -18,7 +18,7 @@ the correct caf version for you.
 To initialize your local repository using the SlimLP trees, use this command:
 
 
-	repo init -u git://github.com/Candy6/platform_manifest.git -b c6
+	repo init -u git://github.com/Candy6/candy.git -b c6
 
 
 
