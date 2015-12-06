@@ -14,6 +14,10 @@
   <remote  name="cd"
            fetch="https://github.com/candydevices"
            revision="c6" />
+           
+  <remote  name="tm"
+          fetch="https://github.com/themuppets" 
+          revision="cm-13.0" />
 
   <default revision="refs/tags/android-6.0.0_r24"
            remote="aosp"
