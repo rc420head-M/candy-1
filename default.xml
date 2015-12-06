@@ -35,7 +35,7 @@
   <project path="system/core" name="Candy6/android_system_core" remote="github" revision="c6" />
   <project path="system/extras" name="Candy6/android_system_extras" remote="github" revision="c6" />
   <project path="system/vold" name="Candy6/android_system_vold" remote="github" revision="c6" />
-  <project path="vendor/slim" name="Candy6/vendor_slim" remote="github" revision="c6" />
+  <project path="vendor/candy" name="Candy6/vendor_candy" remote="github" revision="c6" />
 
   <project path="abi/cpp" name="platform/abi/cpp" groups="pdk" />
   <project path="art" name="SlimRoms/android_art" remote="github" revision="mm6.0"  />
