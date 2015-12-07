@@ -19,33 +19,33 @@
            remote="aosp"
            sync-j="4" />
            
-  <project path="build" name="Candy6/android_build" remote="github" revision="c6" >
+  <!-- Start Candy Repos -->
+  <project path="build" name="android_build" remote="candy" >
     <copyfile src="core/root.mk" dest="Makefile" />
   </project>
-<!-- Candy Repos -->
-  <project path="bionic" name="Candy6/android_bionic" remote="github" revision="c6" />
-  <project path="device/qcom/common" name="Candy6/device_qcom_common" remote="github" revision="c6" />
-  <project path="device/qcom/sepolicy" name="Candy6/device_qcom_sepolicy" remote="github" revision="c6" />
-  <project path="external/busybox" name="Candy6/android_external_busybox" remote="github" revision="c6" />
-  <project path="external/sepolicy" name="Candy6/android_external_sepolicy" remote="github" revision="c6" />
-  <project path="frameworks/av" name="Candy6/frameworks_av" remote="github" revision="c6" />
-  <project path="frameworks/base" name="Candy6/frameworks_base" remote="github" revision="c6" />
-  <project path="frameworks/opt/telephony" name="Candy6/frameworks_opt_telephony" remote="github" revision="c6" />
-  <project path="candy" name="Candy6/candy" remote="github" revision="c6" />
-  <project path="system/core" name="Candy6/android_system_core" remote="github" revision="c6" />
-  <project path="system/extras" name="Candy6/android_system_extras" remote="github" revision="c6" />
-  <project path="system/vold" name="Candy6/android_system_vold" remote="github" revision="c6" />
-  <project path="vendor/candy" name="Candy6/vendor_candy" remote="github" revision="c6" />
-  <project path="packages/providers/TelephonyProvider" name="Candy6/packages_providers_TelephonyProvider" remote="github" revision="c6" />
-  <project path="packages/services/Telecomm" name="Candy6/packages_services_Telecomm" remote="github" revision="c6" />
-  <project path="packages/services/Telephony" name="Candy6/packages_services_Telephony" remote="github" revision="c6" />
-  <project path="hardware/ril" name="Candy6/hardware_ril" remote="github" revision="c6" />
-  <project path="art" name="Candy6/android_art" remote="github" revision="c6"  />
-  <project path="hardware/qcom/audio-caf/msm8660" name="Candy6/hardware_qcom_audio" remote="github" revision="c6-caf-8660" />
-  <project path="hardware/qcom/media-caf/msm8660" name="Candy6/hardware_qcom_media" remote="github" revision="c6-caf-8660" />
-  <project path="hardware/qcom/display-caf/msm8660" name="Candy6/hardware_qcom_display" remote="github" revision="c6-caf-8660" />
-  <project path="frameworks/opt/net/ims" name="Candy6/frameworks_opt_net_ims" remote="github" revision="c6" groups="frameworks_ims,pdk-cw-fs,pdk-fs" />
-
+  <project path="art" name="android_art" remote="candy"  />
+  <project path="bionic" name="android_bionic" remote="candy" />
+  <project path="candy" name="candy" remote="candy" />
+  <project path="device/qcom/common" name="device_qcom_common" remote="candy" />
+  <project path="device/qcom/sepolicy" name="device_qcom_sepolicy" remote="candy" />
+  <project path="external/busybox" name="android_external_busybox" remote="candy" />
+  <project path="external/sepolicy" name="android_external_sepolicy" remote="candy" />
+  <project path="frameworks/av" name="frameworks_av" remote="candy" />
+  <project path="frameworks/base" name="frameworks_base" remote="candy" />
+  <project path="frameworks/opt/net/ims" name="frameworks_opt_net_ims" remote="candy" groups="frameworks_ims,pdk-cw-fs,pdk-fs" />
+  <project path="frameworks/opt/telephony" name="frameworks_opt_telephony" remote="candy" />
+  <project path="hardware/qcom/audio-caf/msm8660" name="hardware_qcom_audio" remote="candy" revision="c6-caf-8660" />
+  <project path="hardware/qcom/display-caf/msm8660" name="hardware_qcom_display" remote="candy" revision="c6-caf-8660" />
+  <project path="hardware/qcom/media-caf/msm8660" name="hardware_qcom_media" remote="candy" revision="c6-caf-8660" />
+  <project path="hardware/ril" name="hardware_ril" remote="candy" />
+  <project path="packages/providers/TelephonyProvider" name="packages_providers_TelephonyProvider" remote="candy" />
+  <project path="packages/services/Telecomm" name="packages_services_Telecomm" remote="candy" />
+  <project path="packages/services/Telephony" name="packages_services_Telephony" remote="candy" />
+  <project path="system/core" name="android_system_core" remote="candy" />
+  <project path="system/extras" name="android_system_extras" remote="candy" />
+  <project path="system/vold" name="android_system_vold" remote="candy" />
+  <project path="vendor/candy" name="vendor_candy" remote="candy" />
+<!-- End Candy Repos -->
 
   <project path="abi/cpp" name="platform/abi/cpp" groups="pdk" />
   <project path="bootable/recovery" name="SlimRoms/bootable_recovery" remote="github" revision="mm6.0" />
