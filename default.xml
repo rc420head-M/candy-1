@@ -29,6 +29,7 @@
   <project path="device/qcom/common" name="device_qcom_common" remote="candy" />
   <project path="device/qcom/sepolicy" name="device_qcom_sepolicy" remote="candy" />
   <project path="external/busybox" name="android_external_busybox" remote="candy" />
+  <project path="external/connectivity" name="android_external_connectivity" remote="candy" />
   <project path="external/sepolicy" name="android_external_sepolicy" remote="candy" />
   <project path="frameworks/av" name="frameworks_av" remote="candy" />
   <project path="frameworks/base" name="frameworks_base" remote="candy" />
