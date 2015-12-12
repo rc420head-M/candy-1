@@ -518,8 +518,6 @@
   <project path="tools/swt" name="platform/tools/swt" groups="notdefault,tools" />
   <project path="tools/tradefederation" name="platform/tools/tradefederation" groups="notdefault,tradefed" />
 <!-- slim->aosp -->
-  <project path="external/ant-wireless/ant_native" name="platform/external/ant-wireless/ant_native" />
-  <project path="external/ant-wireless/ant_service" name="platform/external/ant-wireless/ant_service" />
   <project path="external/apache-http" name="platform/external/apache-http" />
   <project path="external/tinyalsa" name="platform/external/tinyalsa" />
   <project path="external/qrngd" name="platform/external/qrngd" />
@@ -531,8 +529,6 @@
   <project path="hardware/broadcom/wlan" name="platform/hardware/broadcom/wlan" />
   <project path="hardware/invensense" name="platform/hardware/invensense" />
   <project path="hardware/qcom/gps" name="platform/hardware/qcom/gps" />
-  <project path="hardware/samsung_slsi/exynos5" name="platform/hardware/samsung/slsi_exynos5" />
-  <project path="hardware/ti/wlan" name="platform/hardware/ti/wlan" revision="android-4.4.4_r2.0.1" />
   <project path="libcore" name="platform/libcore" />
   <project path="packages/apps/BasicSmsReceiver" name="platform/packages/apps/BasicSmsReceiver" />
   <project path="packages/apps/Bluetooth" name="platform/packages/apps/Bluetooth" />
