@@ -30,7 +30,7 @@
            remote="aosp"
            sync-j="4" />
            
-<!-- start candy repos -->
+<!-- Start Candy repos -->
   <project path="build" name="android_build" remote="candy" >
     <copyfile src="core/root.mk" dest="Makefile" />
   </project>
@@ -60,9 +60,9 @@
   <project path="system/extras" name="android_system_extras" remote="candy" />
   <project path="system/vold" name="android_system_vold" remote="candy" />
   <project path="vendor/candy" name="vendor_candy" remote="candy" />
-<!-- end candy repos -->
+<!-- End Candy repos -->
 
-<!-- cm repos -->
+<!-- Start CM repos -->
   <project path="external/libnfc-nci" name="android_external_libnfc-nci" remote="cm" />
   <project path="external/libnfc-nxp" name="android_external_libnfc-nxp" remote="cm" />
   <project path="hardware/qcom/audio/default" name="android_hardware_qcom_audio" groups="qcom,qcom_audio" remote="cm" />
@@ -87,12 +87,15 @@
   <project path="hardware/qcom/media-caf/msm8994" name="android_hardware_qcom_media" groups="qcom" remote="cm" revision="cm-13.0-caf-8994" />
   <project path="hardware/qcom/media-caf/msm8996" name="android_hardware_qcom_media" groups="qcom" remote="cm" revision="cm-13.0-caf-8996" />
   <project path="packages/apps/Nfc" name="android_packages_apps_Nfc" groups="apps_nfc,pdk-fs" remote="cm" />
-<!-- end aosp repos -->
+<!-- End CM repos -->
 
-<!-- start slim repos --> 
+<!-- Start Slim repos --> 
   <project path="bootable/recovery" name="bootable_recovery" remote="Slim" revision="mm6.0" />
   <project path="external/android-visualizer" name="android_external_android-visualizer" remote="Slim" revision="mm6.0" />
+  <project path="external/ant-wireless/ant_native" name="android_external_ant-wireless_ant_native" remote="Slim" revision="mm6.0" />
+  <project path="external/ant-wireless/ant_service" name="android_external_ant-wireless_ant_service" remote="Slim" revision="mm6.0" />
   <project path="external/ant-wireless/antradio-library" name="android_external_ant-wireless_antradio-library" remote="Slim" revision="mm6.0" />
+  <project path="external/apache-http" name="android_external_apache-http" remote="Slim" revision="mm6.0" />
   <project path="external/e2fsprogs" name="android_external_e2fsprogs" groups="pdk" remote="Slim" revision="mm6.0" />
   <project path="external/exfat" name="android_external_exfat" remote="Slim" revision="mm6.0" />
   <project path="external/f2fs-tools" name="android_external_f2fs-tools" remote="Slim" revision="mm6.0" />
@@ -100,11 +103,18 @@
   <project path="external/ntfs-3g" name="android_external_ntfs-3g" remote="Slim" revision="mm6.0" />
   <project path="external/okhttp" name="android_external_okhttp" remote="Slim" revision="mm6.0" />
   <project path="external/skia" name="android_external_skia" remote="Slim" revision="mm6.0" />
+  <project path="external/tinyalsa" name="android_external_tinyalsa" remote="Slim" revision="mm6.0" />
   <project path="external/tinycompress" name="android_external_tinycompress" remote="Slim" revision="mm6.0" />
   <project path="external/wpa_supplicant_8" name="android_external_wpa_supplicant_8" remote="Slim" revision="mm6.0" />
   <project path="frameworks/native" name="frameworks_native" remote="Slim" revision="mm6.0" />
+  <project path="frameworks/opt/bluetooth" name="frameworks_opt_bluetooth" remote="Slim" revision="mm6.0" groups="pdk-cw-fs" />
   <project path="frameworks/opt/cards" name="frameworks_opt_cards" remote="Slim" revision="mm6.0" />
   <project path="frameworks/opt/hardware" name="frameworks_opt_hardware" remote="Slim" revision="mm6.0" />
+  <project path="frameworks/opt/datetimepicker" name="frameworks_opt_datetimepicker" remote="Slim" revision="mm6.0" />
+  <project path="frameworks/opt/net/wifi" name="frameworks_opt_net_wifi" remote="Slim" revision="mm6.0" />
+  <project path="frameworks/opt/timezonepicker" name="frameworks_opt_timezonepicker" remote="Slim" revision="mm6.0" />
+  <project path="hardware/broadcom/libbt" name="hardware_broadcom_libbt" remote="Slim" revision="mm6.0" />
+  <project path="hardware/broadcom/wlan" name="hardware_broadcom_wlan" remote="Slim" revision="mm6.0" />
   <project path="hardware/cyanogen" name="hardware_cyanogen" remote="Slim" revision="mm6.0" />
   <project path="hardware/intel/common/libmix" name="hardware_intel_common_libmix" remote="Slim" revision="mm6.0" />
   <project path="hardware/intel/common/libstagefrighthw" name="hardware_intel_common_libstagefrighthw" remote="Slim" revision="mm6.0" />
@@ -114,24 +124,56 @@
   <project path="hardware/intel/common/wrs_omxil_core" name="hardware_intel_common_wrs_omxil_core" remote="Slim" revision="mm6.0" />
   <project path="hardware/intel/img/hwcomposer" name="hardware_intel_img_hwcomposer" remote="Slim" revision="mm6.0" />
   <project path="hardware/intel/img/psb_video" name="hardware_intel_img_psb_video" remote="Slim" revision="mm6.0" />
+  <project path="hardware/invensense" name="hardware_invensense" remote="Slim" revision="mm6.0" />
   <project path="hardware/libhardware_legacy" name="hardware_libhardware_legacy" remote="Slim" revision="mm6.0" />
   <project path="hardware/ril-caf" name="hardware_ril" remote="Slim" revision="mm6.0-caf" />
   <project path="hardware/qcom/bt" name="hardware_qcom_bt" remote="Slim" revision="mm6.0" />
   <project path="hardware/qcom/bt-caf" name="hardware_qcom_bt" remote="Slim" revision="mm6.0-caf" />
   <project path="hardware/qcom/camera" name="hardware_qcom_camera" remote="Slim" revision="mm6.0" />
   <project path="hardware/qcom/fm" name="hardware_qcom_fm" remote="Slim" revision="mm6.0" />
+  <project path="hardware/qcom/gps" name="hardware_qcom_gps" remote="Slim" revision="mm6.0" />
   <project path="hardware/qcom/power" name="hardware_qcom_power" remote="Slim" revision="mm6.0" /> 
   <project path="hardware/qcom/wlan" name="hardware_qcom_wlan" remote="Slim" revision="mm6.0" />
   <project path="hardware/qcom/wlan-caf" name="hardware_qcom_wlan" remote="Slim" revision="mm6.0-caf" />
+  <project path="hardware/samsung_slsi/exynos5" name="hardware_samsung_slsi_exynos5" remote="Slim" revision="mm6.0" />
   <project path="hardware/ti/omap3" name="hardware_ti_omap3" remote="Slim" revision="mm6.0" />
   <project path="hardware/ti/omap4" name="hardware_ti_omap4" remote="Slim" revision="mm6.0" />
   <project path="hardware/ti/omap4xxx" name="hardware_ti_omap4xxx" remote="Slim" revision="mm6.0" />
+  <project path="hardware/ti/wlan" name="hardware_ti_wlan" remote="Slim" revision="mm6.0" />
   <project path="hardware/ti/wpan" name="hardware_ti_wpan" remote="Slim" revision="mm6.0" />
+  <project path="libcore" name="android_libcore" remote="Slim" revision="mm6.0" />
   <project path="packages/apps/AudioFX" name="packages_apps_AudioFX" remote="Slim" revision="mm6.0" />
+  <project path="packages/apps/BasicSmsReceiver" name="packages_apps_BasicSmsReceiver" remote="Slim" revision="mm6.0" />
   <project path="packages/apps/Bluetooth" name="packages_apps_Bluetooth" remote="Slim" revision="mm6.0" />
+  <project path="packages/apps/Browser" name="packages_apps_Browser" remote="Slim" revision="mm6.0" />
+  <project path="packages/apps/Calendar" name="packages_apps_Calendar" remote="Slim" revision="mm6.0" />
+  <project path="packages/apps/Camera2" name="packages_apps_Camera2" remote="Slim" revision="mm6.0" />
+  <project path="packages/apps/CellBroadcastReceiver" name="packages_apps_CellBroadcastReceiver" remote="Slim" revision="mm6.0" />
+  <project path="packages/apps/Contacts" name="packages_apps_Contacts" remote="Slim" revision="mm6.0" />
+  <project path="packages/apps/ContactsCommon" name="packages_apps_ContactsCommon" remote="Slim" revision="mm6.0" />
+  <project path="packages/apps/DeskClock" name="packages_apps_DeskClock" remote="Slim" revision="mm6.0" />
+  <project path="packages/apps/Dialer" name="packages_apps_Dialer" remote="Slim" revision="mm6.0" />
+  <project path="packages/apps/Email" name="packages_apps_Email" remote="Slim" revision="mm6.0" />
+  <project path="packages/apps/Exchange" name="packages_apps_Exchange" remote="Slim" revision="mm6.0" />
+  <project path="packages/apps/Gallery2" name="packages_apps_Gallery2" remote="Slim" revision="mm6.0" />
+  <project path="packages/apps/InCallUI" name="packages_apps_InCallUI" remote="Slim" revision="mm6.0" />
+  <project path="packages/apps/Messaging" name="packages_apps_Messaging" remote="Slim" revision="mm6.0" />
+  <project path="packages/apps/PhoneCommon" name="packages_apps_PhoneCommon" remote="Slim" revision="mm6.0" />
+  <project path="packages/apps/Stk" name="packages_apps_Stk" remote="Slim" revision="mm6.0" />
+  <project path="packages/apps/UnifiedEmail" name="packages_apps_UnifiedEmail" remote="Slim" revision="mm6.0" />
+  <project path="packages/inputmethods/LatinIME" name="packages_inputmethods_LatinIME" remote="Slim" revision="mm6.0" />
+  <project path="packages/providers/ContactsProvider" name="packages_providers_ContactsProvider" remote="Slim" revision="mm6.0" />
+  <project path="packages/providers/DownloadProvider" name="packages_providers_DownloadProvider" remote="Slim" revision="mm6.0" />
+  <project path="packages/providers/MediaProvider" name="packages_providers_MediaProvider" remote="Slim" revision="mm6.0" />
+  <project path="packages/services/Mms" name="packages_services_Mms" remote="Slim" revision="mm6.0" />
+  <project path="system/bt" name="android_system_bt" remote="Slim" revision="mm6.0" />
   <project path="system/extras/su" name="android_system_extras_su" remote="Slim" revision="mm6.0" />
+  <project path="system/keymaster" name="android_system_keymaster" remote="Slim" revision="mm6.0" />
   <project path="system/media" name="android_system_media" remote="Slim" revision="mm6.0" />
+  <project path="system/netd" name="android_system_netd" remote="Slim" revision="mm6.0" />
   <project path="system/qcom" name="android_system_qcom" remote="Slim" revision="mm6.0" />
+  <project path="system/security" name="android_system_security" remote="Slim" revision="mm6.0" />
+  <!-- End Slim repos -->
   
   <!-- CAF repos -->
   <project path="vendor/qcom/opensource/display-frameworks" name="vendor_qcom_opensource_display-frameworks" remote="Slim" revision="mm6.0" />
@@ -149,12 +191,15 @@
   <!-- SamsungServiceMode -->
   <project path="packages/apps/SamsungServiceMode" name="packages_apps_SamsungServiceMode" remote="Slim" revision="mm6.0" />
 
+  <!-- qrngd -->
+  <project path="external/qrngd" name="android_external_qrngd" remote="Slim" revision="mm6.0" />
+
   <!-- ffmpeg -->
   <project path="external/ffmpeg" name="android_external_ffmpeg" remote="Slim" revision="mm6.0" />
   <project path="external/stagefright-plugins" name="android_external_stagefright-plugins" remote="Slim" revision="mm6.0" />
 <!-- end slim repos -->
 
-<!-- start aosp repos -->
+<!-- Start AOSP repos -->
   <project path="abi/cpp" name="platform/abi/cpp" groups="pdk" />
   <project path="cts" name="platform/cts" groups="cts,pdk-cw-fs,pdk-fs" />
   <project path="dalvik" name="platform/dalvik" groups="pdk-cw-fs,pdk-fs" />
@@ -518,44 +563,6 @@
   <project path="tools/studio/translation" name="platform/tools/studio/translation" groups="notdefault,tools" />
   <project path="tools/swt" name="platform/tools/swt" groups="notdefault,tools" />
   <project path="tools/tradefederation" name="platform/tools/tradefederation" groups="notdefault,tradefed" />
-<!-- slim->aosp -->
-  <project path="external/apache-http" name="platform/external/apache-http" />
-  <project path="external/tinyalsa" name="platform/external/tinyalsa" />
-  <project path="frameworks/opt/bluetooth" name="platform/frameworks/opt/bluetooth" groups="pdk-cw-fs" />
-  <project path="frameworks/opt/datetimepicker" name="platform/frameworks/opt/datetimepicker" />
-  <project path="frameworks/opt/net/wifi" name="platform/frameworks/opt/net/wifi" />
-  <project path="frameworks/opt/timezonepicker" name="platform/frameworks/opt/timezonepicker" />
-  <project path="hardware/broadcom/libbt" name="platform/hardware/broadcom/libbt" />
-  <project path="hardware/broadcom/wlan" name="platform/hardware/broadcom/wlan" />
-  <project path="hardware/invensense" name="platform/hardware/invensense" />
-  <project path="hardware/qcom/gps" name="platform/hardware/qcom/gps" />
-  <project path="libcore" name="platform/libcore" />
-  <project path="packages/apps/BasicSmsReceiver" name="platform/packages/apps/BasicSmsReceiver" />
-  <project path="packages/apps/Browser" name="platform/packages/apps/Browser" />
-  <project path="packages/apps/Calendar" name="platform/packages/apps/Calendar" />
-  <project path="packages/apps/Camera2" name="platform/packages/apps/Camera2" />
-  <project path="packages/apps/CellBroadcastReceiver" name="platform/packages/apps/CellBroadcastReceiver" />
-  <project path="packages/apps/Contacts" name="platform/packages/apps/Contacts" />
-  <project path="packages/apps/ContactsCommon" name="platform/packages/apps/ContactsCommon" />
-  <project path="packages/apps/DeskClock" name="platform/packages/apps/DeskClock" />
-  <project path="packages/apps/Dialer" name="platform/packages/apps/Dialer" />
-  <project path="packages/apps/Email" name="platform/packages/apps/Email" />
-  <project path="packages/apps/Exchange" name="platform/packages/apps/Exchange" />
-  <project path="packages/apps/Gallery2" name="platform/packages/apps/Gallery2" />
-  <project path="packages/apps/InCallUI" name="platform/packages/apps/InCallUI" />
-  <project path="packages/apps/Messaging" name="platform/packages/apps/Messaging" />
-  <project path="packages/apps/PhoneCommon" name="platform/packages/apps/PhoneCommon" />
-  <project path="packages/apps/Stk" name="platform/packages/apps/Stk" />
-  <project path="packages/apps/UnifiedEmail" name="platform/packages/apps/UnifiedEmail" />
-  <project path="packages/inputmethods/LatinIME" name="platform/packages/inputmethods/LatinIME" />
-  <project path="packages/providers/ContactsProvider" name="platform/packages/providers/ContactsProvider" />
-  <project path="packages/providers/DownloadProvider" name="platform/packages/providers/DownloadProvider" />
-  <project path="packages/providers/MediaProvider" name="platform/packages/providers/MediaProvider" />
-  <project path="packages/services/Mms" name="platform/packages/services/Mms" />
-  <project path="system/bt" name="platform/system/bt" />
-  <project path="system/keymaster" name="platform/system/keymaster" />
-  <project path="system/netd" name="platform/system/netd" />
-  <project path="system/security" name="platform/system/security" />
-<!-- end aosp repos -->
+<!-- End AOSP repos -->
  
 </manifest>
