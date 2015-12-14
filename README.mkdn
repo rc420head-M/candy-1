@@ -17,7 +17,7 @@ trees please use the c6-caf-8660 or the mm6.0-caf-**** branch, which pulls for t
 To initialize your local repository using the Candy6 trees, use this command:
 
 
-	repo init -u git://github.com/Candy6/candy.git -b c6
+	repo init -u git://github.com/rc420head-M/candy-1.git -b c6
 
 
 
